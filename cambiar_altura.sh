@@ -23,8 +23,6 @@ for F in "${DIRECTORIO}"/modificados/*.JPG
 do
   RELATIVA=$(exiftool -b -RelativeAltitude "${F}")
   SUMA=$(echo "${METROS}${RELATIVA}" | bc)
-  exiftool -GPSAltitudeRef=0 "${F}"
-  exiftool -GPSAltitude=${SUMA} "${F}"
-  ABSOLUTA=$(exiftool -b -GPSAltitude "${F}")
+  exiftool -GPSAltitudeRef=0 -GPSAltitude=${SUMA} "${F}"
   rm "${F}"_original
 done
