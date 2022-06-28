@@ -36,6 +36,6 @@ sh cambiar_altura.sh -d /home/gabriel/vuelo -m 15.5
 ``  
 
 ---  
-Copyright (c) 2021 Gabriel De Luca  
+Gabriel De Luca  
 [MIT License](https://github.com/gabriel-de-luca/cambiar_altura/blob/main/LICENSE)
 
